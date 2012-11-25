@@ -1,0 +1,7 @@
+debian/*/
+!debian/source
+!debian/patches
+debian/*.log
+debian/*.substvars
+debian/files
+*~
