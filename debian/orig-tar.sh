@@ -20,7 +20,7 @@ echo "Version $VERSION"
 echo "Deleting not needed files ..."
 rm -fr `find $DIRECTORY -maxdepth 1 -type d ! -name $DIRECTORY ! -name tools`
 rm -fr `find $DIRECTORY/tools -maxdepth 1 -type d ! -name tools ! -name aidl`
-rm -f preloaded-classes
+rm -f $DIRECTORY/preloaded-classes
 
 
 echo "Packaging archive into ../${DIRECTORY}_$REVISION+git$VERSION.orig.tar.gz ..."
