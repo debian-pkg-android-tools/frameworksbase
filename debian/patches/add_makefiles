@@ -1,7 +1,7 @@
 Index: androidframeworksbase/tools/aidl/Makefile
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ androidframeworksbase/tools/aidl/Makefile	2012-11-25 23:51:07.471818379 +0100
++++ androidframeworksbase/tools/aidl/Makefile	2012-11-26 02:19:05.640538797 +0100
 @@ -0,0 +1,32 @@
 +#!/bin/make
 +
@@ -26,9 +26,9 @@ Index: androidframeworksbase/tools/aidl/Makefile
 +	$(CC) $(OBJECTS) -o aidl
 +
 +generate:
-+	yacc -d -o aidl_language_y.cpp aidl_language_y.y
++	bison -d -o aidl_language_y.cpp aidl_language_y.y
 +	mv aidl_language_y.hpp aidl_language_y.h
-+	lex -o aidl_language_l.cpp aidl_language_l.l
++	flex -o aidl_language_l.cpp aidl_language_l.l
 +
 +clean:
 +	rm -f aidl
@@ -38,7 +38,7 @@ Index: androidframeworksbase/tools/aidl/Makefile
 Index: androidframeworksbase/Makefile
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ androidframeworksbase/Makefile	2012-11-25 23:39:53.755816618 +0100
++++ androidframeworksbase/Makefile	2012-11-26 02:18:40.976877769 +0100
 @@ -0,0 +1,8 @@
 +#!/bin/make
 +
@@ -51,7 +51,7 @@ Index: androidframeworksbase/Makefile
 Index: androidframeworksbase/tools/Makefile
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ androidframeworksbase/tools/Makefile	2012-11-25 23:40:01.963816639 +0100
++++ androidframeworksbase/tools/Makefile	2012-11-26 02:18:40.980875767 +0100
 @@ -0,0 +1,8 @@
 +#!/bin/make
 +

@@ -3,7 +3,7 @@ Section: devel
 Priority: extra
 Maintainer: Android tools Maintainer <android-tools-devel@lists.alioth.debian.org>
 Uploaders: Stefan Handschuh <handschuh.stefan@googlemail.com>
-Build-Depends: debhelper (>=9), flex, bison
+Build-Depends: debhelper (>=9), flex, bison (>=2.2)
 Standards-Version: 3.9.3
 Homepage: https://android.googlesource.com/platform/frameworks/base
 Vcs-Git: git://anonscm.debian.org/git/android-tools/framworksbase.git
